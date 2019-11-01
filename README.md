@@ -8,3 +8,6 @@ Converting TypeScript to JavaScript
 
 https://www.tutorialsteacher.com/typescript/converting-javascript-to-typescript
 
+Playing with and scaling the pizza-portal application
+
+https://github.com/abhishekr7/pizza-portal
