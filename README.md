@@ -49,3 +49,7 @@ https://www.trustradius.com/products/cloudant/reviews
 > *Cons*
 
  1. Limited features
+
+What is express ?
+> *Web application framework* - 
+> Helps to organize your web application into an MVC architecture on the server side
