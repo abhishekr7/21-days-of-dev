@@ -12,6 +12,8 @@ Playing with and scaling the pizza-portal application
 
 https://github.com/abhishekr7/pizza-portal
 
+Converting pizza-portal into inventro
+
 Comparison of NoSQL options in the market
 https://www.trustradius.com/nosql-databases
 
