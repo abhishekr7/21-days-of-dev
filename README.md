@@ -35,3 +35,11 @@ https://www.trustradius.com/products/amazon-dynamodb/reviews
 IBM Cloudant => Very few
 https://www.trustradius.com/products/cloudant/reviews
 
+**Chart.js**
+> *Pros*
+> lightweight
+> responsive charts
+> clear documentation
+> NPM plugin support
+> *Cons*
+> Limited features
