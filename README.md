@@ -37,9 +37,15 @@ https://www.trustradius.com/products/cloudant/reviews
 
 **Chart.js**
 > *Pros*
-> lightweight
-> responsive charts
-> clear documentation
-> NPM plugin support
+
+ 1. lightweight
+
+ 2. responsive charts
+
+ 3. clear documentation
+
+ 4. NPM plugin support
+
 > *Cons*
-> Limited features
+
+ 1. Limited features
