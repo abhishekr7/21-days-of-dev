@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Test Bar Chart</title>
+
+	<script src="/home/abhishek/pizza-portal/node_modules/chart.js/dist/Chart.js"></script>
+
+</head>
+<body>
+	<div id="container" style="width: 75%;">
+		
+		<canvas id="chart1"></canvas>	
+		
+		<canvas id="chart2"></canvas>	
+	</div>
+
+	<script>
+
+		var doughnut_chart = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [12,19,3,5,2,3,10],
+
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(25, 59, 164, 0.2)',
+						'rgba(55, 19, 100, 0.2)'
+					],
+					label: 'GDP'
+				}],
+				labels:['India','Germany','USA','Russia','China','Japan','England']
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'GDP'
+				}
+			}
+		};
+
+		var bar_chart = {
+			type: 'bar',
+			data: {
+
+				labels:['India','Germany','USA','Russia','China','Japan','England'],
+				
+				datasets: [{
+					label: '',
+					data: [12,19,3,5,2,3,10],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(25, 59, 164, 0.2)',
+						'rgba(55, 19, 100, 0.2)'
+					],
+					
+					borderColor: [
+						'rgba(255, 99, 132, 1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(25, 59, 164, 1)',
+						'rgba(55, 19, 100, 1)'
+					],
+					
+					borderWidth: 1
+				}]
+			},
+			
+			options: {
+				responsive: true, 
+				title: {
+					display: true,
+					text: 'GDP'
+				},
+				tooltips: {
+					enabled: false
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}		
+		};
+
+		window.onload = function(){
+			var ctx_bar = document.getElementById('chart1').getContext('2d');
+			window.bar = new Chart(ctx_bar, bar_chart);	
+			var ctx_doughnut = document.getElementById('chart2').getContext('2d');
+			window.bar = new Chart(ctx_doughnut, doughnut_chart);
+		};
+	</script>
+
+</body>
+</html>
