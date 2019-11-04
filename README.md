@@ -53,3 +53,5 @@ https://www.trustradius.com/products/cloudant/reviews
 What is express ?
 > *Web application framework* - 
 > Helps to organize your web application into an MVC architecture on the server side
+
+Frames should be avoided at all costs. There are outdated and can cause problems. Use server side scripting instead.
